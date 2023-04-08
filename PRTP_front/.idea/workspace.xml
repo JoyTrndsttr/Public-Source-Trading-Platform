@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ade52023-ac01-4ebb-9f11-c2019237d307" name="Default Changelist" comment="加入watch关系查询，learn关系标准化为大写" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1rD7XiYI2ECbMcql12frFv5jnvD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="HelloWorld.vue.should render correct contents" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/unit/specs/HelloWorld.spec.js" />
+      <test-names>
+        <test-name value="HelloWorld.vue" />
+        <test-name value="should render correct contents" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.HelloWorld.vue.should render correct contents" />
+      <item itemvalue="npm.dev" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.HelloWorld.vue.should render correct contents" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ade52023-ac01-4ebb-9f11-c2019237d307" name="Default Changelist" comment="" />
+      <created>1618498847987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618498847987</updated>
+      <workItem from="1618498849467" duration="416000" />
+      <workItem from="1618539234087" duration="799000" />
+      <workItem from="1618639601281" duration="7489000" />
+      <workItem from="1618741884746" duration="11330000" />
+      <workItem from="1618794000882" duration="591000" />
+      <workItem from="1618824544690" duration="521000" />
+      <workItem from="1618837961809" duration="3511000" />
+      <workItem from="1618877820593" duration="1467000" />
+      <workItem from="1618879506936" duration="2602000" />
+      <workItem from="1619102850531" duration="1706000" />
+      <workItem from="1619105482177" duration="637000" />
+      <workItem from="1619106617871" duration="5741000" />
+      <workItem from="1619165581015" duration="2112000" />
+      <workItem from="1619234290798" duration="1600000" />
+      <workItem from="1619268072992" duration="2275000" />
+      <workItem from="1619359948599" duration="367000" />
+      <workItem from="1619360570665" duration="880000" />
+      <workItem from="1619410872236" duration="300000" />
+      <workItem from="1619498704906" duration="259000" />
+      <workItem from="1619511466102" duration="337000" />
+      <workItem from="1620738345429" duration="1508000" />
+      <workItem from="1623386463650" duration="1164000" />
+      <workItem from="1623391443850" duration="538000" />
+      <workItem from="1623586155481" duration="60000" />
+      <workItem from="1623658602897" duration="74000" />
+      <workItem from="1623745366227" duration="5884000" />
+      <workItem from="1636605879167" duration="3027000" />
+      <workItem from="1638200405558" duration="149000" />
+      <workItem from="1639380020083" duration="2000" />
+      <workItem from="1639918862861" duration="1096000" />
+      <workItem from="1642075834906" duration="1003000" />
+      <workItem from="1642661324732" duration="1327000" />
+      <workItem from="1644568460101" duration="146000" />
+      <workItem from="1644666584611" duration="2061000" />
+      <workItem from="1645843422256" duration="250000" />
+      <workItem from="1680932472989" duration="310000" />
+    </task>
+    <task id="LOCAL-00001" summary="init front">
+      <created>1619106221580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619106221580</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init front">
+      <created>1619106727591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619106727591</updated>
+    </task>
+    <task id="LOCAL-00003" summary="SearchPanel中加入搜索功能，目前只支持搜索user，SearchPanel中添加getQuerySearchResult函数但存在bug">
+      <created>1619167129516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619167129516</updated>
+    </task>
+    <task id="LOCAL-00004" summary="加入watch关系查询，learn关系标准化为大写">
+      <created>1619360002914</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619360002914</updated>
+    </task>
+    <task id="LOCAL-00005" summary="加入watch关系查询，learn关系标准化为大写">
+      <created>1619410931291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619410931292</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init front" />
+    <MESSAGE value="SearchPanel中加入搜索功能，目前只支持搜索user，SearchPanel中添加getQuerySearchResult函数但存在bug" />
+    <MESSAGE value="加入watch关系查询，learn关系标准化为大写" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入watch关系查询，learn关系标准化为大写" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1419" height="136" key="GridCell.Tab.0.bottom" timestamp="1642681273564">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state width="1419" height="136" key="GridCell.Tab.0.bottom/0.25.1440.805@0.25.1440.805" timestamp="1642681273564" />
+    <state width="1419" height="136" key="GridCell.Tab.0.center" timestamp="1642681273563">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state width="1419" height="136" key="GridCell.Tab.0.center/0.25.1440.805@0.25.1440.805" timestamp="1642681273563" />
+    <state width="1419" height="136" key="GridCell.Tab.0.left" timestamp="1642681273562">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state width="1419" height="136" key="GridCell.Tab.0.left/0.25.1440.805@0.25.1440.805" timestamp="1642681273562" />
+    <state width="1419" height="136" key="GridCell.Tab.0.right" timestamp="1642681273563">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state width="1419" height="136" key="GridCell.Tab.0.right/0.25.1440.805@0.25.1440.805" timestamp="1642681273563" />
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1639918943293">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.25.1440.805@0.25.1440.805" timestamp="1639918943293" />
+  </component>
+</project>
