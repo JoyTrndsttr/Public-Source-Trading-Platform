@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Public-Source-Trading-Platform:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Public_Source_Trading_Platform_jar</output-path>
+    <root id="archive" name="Public-Source-Trading-Platform.jar" />
+  </artifact>
+</component>

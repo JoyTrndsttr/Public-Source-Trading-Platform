@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Public-Source-Trading-Platform.iml" filepath="$PROJECT_DIR$/.idea/Public-Source-Trading-Platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRTP_back/gram.iml" filepath="$PROJECT_DIR$/PRTP_back/gram.iml" />
     </modules>
   </component>
 </project>
