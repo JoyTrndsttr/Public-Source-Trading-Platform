@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/driver/neo4j-java-driver/4.0.1/neo4j-java-driver-4.0.1.jar!/" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/driver/neo4j-java-driver/4.0.1/neo4j-java-driver-4.0.1-sources.jar!/" />
     </SOURCES>

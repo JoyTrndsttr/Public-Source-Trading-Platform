@@ -1,8 +1,10 @@
 package org.csu.mooc;
 
+import org.csu.mooc.dao.ProjectDao;
 import org.csu.mooc.dao.UserDao;
 import org.csu.mooc.pojo.User;
 import org.csu.mooc.pojo.Video;
+import org.csu.mooc.service.ProjectService;
 import org.csu.mooc.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,20 @@ class GramApplicationTests {
 
     @Test
     void contextLoads() {
+    }
+
+    @Autowired
+    ProjectService projectService;
+    @Autowired
+    ProjectDao projectDao;
+    @Test
+    void test(){
+        System.out.println("#########################");
+//        System.out.println(projectService.findByProjectName(19).getPrice());
+        double price = projectDao.findByProjectId(19).getPrice();
+//        double price = 1.0;
+        System.out.println(price);
+
     }
 
     @Autowired
