@@ -1,4 +1,4 @@
-package org.csu.mooc.pojo;
+package org.csu.prtp.pojo;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -14,13 +14,14 @@ public class Winner {
     @Id
     @GeneratedValue
     private Long id;
-    private String WinnerName;
+    private int winnerId;
+    private String winnerName;
 
     public Winner() {
 
     }
 
-    @Relationship(type = "BID", direction = Relationship.OUTGOING)
+    @Relationship(type = "WIN", direction = Relationship.OUTGOING)
     private Set<Project> winnedProjects = new HashSet<>();
 
     public Long getId() {
@@ -31,12 +32,20 @@ public class Winner {
         this.id = id;
     }
 
+    public int getWinnerId() {
+        return winnerId;
+    }
+
+    public void setWinnerId(int winnerId) {
+        this.winnerId = winnerId;
+    }
+
     public String getWinnerName() {
-        return WinnerName;
+        return winnerName;
     }
 
     public void setWinnerName(String winnerName) {
-        WinnerName = winnerName;
+        this.winnerName = winnerName;
     }
 
     public Set<Project> getWinnedProjects() {

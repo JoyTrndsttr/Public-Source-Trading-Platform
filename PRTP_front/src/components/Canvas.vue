@@ -45,8 +45,8 @@ export default {
   methods: {
     getGraphData(){
       var _this = this
-      this.axios.get("user/"+'all')
-        // this.axios.get("user/all")
+      this.axios.get("project/"+'all')
+        // this.axios.get("project/all")
         .then(function (response) {
           console.log(response)
           console.log(response.data)
@@ -196,7 +196,7 @@ export default {
         .attr("orient","auto")
         .attr("stroke-width",2)
         .attr("markerUnits", "strokeWidth")
-        .attr("markerUnits", "userSpaceOnUse")
+        .attr("markerUnits", "projectSpaceOnUse")
         .attr("viewBox", "0 -5 10 10")
         .attr("refX", 35)
         .attr("refY", 0)
@@ -211,7 +211,7 @@ export default {
         .attr("orient","auto")
         .attr("stroke-width",2)
         .attr("markerUnits", "strokeWidth")
-        .attr("markerUnits", "userSpaceOnUse")
+        .attr("markerUnits", "projectSpaceOnUse")
         .attr("viewBox", "0 -5 10 10")
         .attr("refX", -25)
         .attr("refY", 0)
@@ -366,12 +366,16 @@ export default {
 
         var nodeName = ''
         for(var item in currentNode){
-          if(item === "userId"){
-            nodeName = currentNode.userName
+          if(item === "projectId"){
+            nodeName = currentNode.projectName
             break
           }
-          else if(item === "conceptId"){
-            nodeName = currentNode.conceptName
+          else if(item === "tendereeId"){
+            nodeName = currentNode.tendereeName
+            break
+          }
+          else if(item === "winnerId"){
+            nodeName = currentNode.winnerName
             break
           }
         }

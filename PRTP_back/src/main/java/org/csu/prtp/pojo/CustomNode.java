@@ -1,4 +1,4 @@
-package org.csu.mooc.pojo;
+package org.csu.prtp.pojo;
 
 public class CustomNode {
     private String id;

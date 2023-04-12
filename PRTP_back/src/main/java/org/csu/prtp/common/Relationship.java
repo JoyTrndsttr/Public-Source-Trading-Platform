@@ -1,12 +1,12 @@
-package org.csu.mooc.common;
+package org.csu.prtp.common;
 
 import lombok.Getter;
 
 @Getter
 public enum Relationship {
-    LEARN("LEARN","User - Course"),
-    WATCH("WATCH","User - Video"),
-    PREREQUISITE("PREREQUISITE","concep");
+    BID("BID","Tenderee - Project"),
+    WIN("WIN","Winner - Project");
+//    PREREQUISITE("PREREQUISITE","concep");
     private final String relation;
     private final String description;
 

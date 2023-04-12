@@ -38,8 +38,8 @@ export default {
       currentType:'',
       input1:'',
       input2:'',
-      relationshipTypes:['LEARN','WATCH','PREREQUISITE'],
-      urls:['LEARN','WATCH','PREREQUISITE'],
+      relationshipTypes:['WIN','BID'],
+      urls:['WIN','BID'],
       nodeName:'',
       nodeType:'',
     }
@@ -54,7 +54,7 @@ export default {
         return
       }
       else{
-        this.axios.get("user/query/" + _this.currentType + '/' + _this.input1 + '/' + _this.input2)
+        this.axios.get("project/query/" + _this.currentType + '/' + _this.input1 + '/' + _this.input2)
           .then(function (response) {
             console.log(response.data)
             _this.currentNode = response.data
@@ -68,7 +68,7 @@ export default {
             console.log(error)
           })
       }
-      console.log(this.currentNode.userName)
+      console.log(this.currentNode.projectName)
       console.log(this.currentType)
     }
   }

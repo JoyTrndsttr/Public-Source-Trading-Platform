@@ -1,4 +1,4 @@
-package org.csu.mooc.common;
+package org.csu.prtp.common;
 
 import lombok.Getter;
 

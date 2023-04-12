@@ -1,4 +1,4 @@
-package org.csu.mooc.pojo;
+package org.csu.prtp.pojo;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -15,6 +15,7 @@ public class Tenderee{
     @Id
     @GeneratedValue
     private Long id;
+    private int tendereeId;
     private String tendereeName;
 
     public Tenderee() {
@@ -30,6 +31,14 @@ public class Tenderee{
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public int getTendereeId() {
+        return tendereeId;
+    }
+
+    public void setTendereeId(int tendereeId) {
+        this.tendereeId = tendereeId;
     }
 
     public String getTendereeName() {

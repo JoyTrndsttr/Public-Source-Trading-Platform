@@ -1,4 +1,4 @@
-package org.csu.mooc.pojo;
+package org.csu.prtp.pojo;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;

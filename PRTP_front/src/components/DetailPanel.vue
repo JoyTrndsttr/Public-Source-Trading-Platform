@@ -37,8 +37,8 @@
           ifShow:false,
           currentNode:{},
           currentType:'',
-          relationshipTypes:['LEARN','WATCH','PREREQUISITE'],
-          urls:['LEARN','WATCH','PREREQUISITE'],
+          relationshipTypes:['BID','WIN'],
+          urls:['BID','WIN'],
           nodeName:'',
           nodeType:'',
         }
@@ -46,6 +46,7 @@
       methods:{
         onSubmit(){
           var _this = this
+          console.log(_this.currentType)
           if(this.currentType === ""){
             this.$message.error('未选择任何类型');
             return
@@ -69,15 +70,22 @@
 
         getName(){
           var _this = this
-          for(var item in _this.currentNode){
-            if(item === "userId"){
-              _this.nodeName = _this.currentNode.userName
-              _this.nodeType = 'user'
+          for(var item in _this.currentNode){//遍历currentNode的每一个属性
+            console.log(_this.currentNode)
+            console.log(item)
+            if(item === "projectId"){
+              _this.nodeName = _this.currentNode.projectName
+              _this.nodeType = 'project'
               break
             }
-            else if(item === "conceptId"){
-              _this.nodeName = _this.currentNode.conceptName
-              _this.nodeType = 'concept'
+            else if(item === "tendereeId"){
+              _this.nodeName = _this.currentNode.tendereeName
+              _this.nodeType = 'tenderee'
+              break
+            }
+            else if(item === "winnerId"){
+              _this.nodeName = _this.currentNode.winnerName
+              _this.nodeType = 'winner'
               break
             }
             }

@@ -1,4 +1,4 @@
-package org.csu.mooc.pojo;
+package org.csu.prtp.pojo;
 
 public class CustomLink {
     private String source;

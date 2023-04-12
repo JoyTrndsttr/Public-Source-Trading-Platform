@@ -32,8 +32,8 @@ export default {
       ifShow:false,
       currentNode:{},
       currentType:'',
-      nodeType:['user','course','concept'],
-      urls:['user','course','concept'],
+      nodeType:['project','tenderee','winner'],
+      urls:['project','tenderee','winner'],
     }
   },
   methods:{
@@ -60,7 +60,7 @@ export default {
             console.log(error)
           })
       }
-      console.log(this.currentNode.userName)
+      console.log(this.currentNode.projectName)
       console.log(this.currentType)
     }
   }

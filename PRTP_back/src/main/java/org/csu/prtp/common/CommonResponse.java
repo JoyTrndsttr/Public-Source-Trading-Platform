@@ -1,4 +1,4 @@
-package org.csu.mooc.common;
+package org.csu.prtp.common;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
