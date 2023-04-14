@@ -2,3 +2,6 @@
 /PRTP_back/target/
 /PRTP_front/node_modules/
 /out/
+/PRTP_front/.idea/
+/PRTP_back/.idea/
+/.idea/

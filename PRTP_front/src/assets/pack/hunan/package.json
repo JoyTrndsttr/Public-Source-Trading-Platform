@@ -1,0 +1,14 @@
+{
+  "name": "hunan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "__npminstall_done": true,
+  "_from": "hunan@1.0.0",
+  "_resolved": "https://registry.npmmirror.com/hunan/-/hunan-1.0.0.tgz"
+}

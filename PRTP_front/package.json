@@ -15,7 +15,11 @@
   "dependencies": {
     "axios": "^0.19.2",
     "d3": "^5.15.0",
+    "echarts": "^4.9.0",
     "element-ui": "^2.13.1",
+    "highcharts": "^10.3.3",
+    "hunan": "^1.0.0",
+    "jquery": "^3.6.4",
     "save": "^2.4.0",
     "vue": "^2.5.2",
     "vue-axios": "^2.1.5",

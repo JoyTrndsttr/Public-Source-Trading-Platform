@@ -1,9 +1,11 @@
 <template>
   <el-container>
     <el-aside>
-      <search-panel ref="searchPanel" @updateGraph="getQuerySearchResult"></search-panel>
-      <detail-panel ref="detailPanel" @update="getQueryResult"></detail-panel>
-      <common-panel ref="commonPanel" @updateGrh="getCommonResult"></common-panel>
+<!--      目前需要手动控制显示的页面-->
+<!--      <search-panel ref="searchPanel" @updateGraph="getQuerySearchResult"></search-panel>-->
+<!--      <detail-panel ref="detailPanel" @update="getQueryResult"></detail-panel>-->
+<!--      <common-panel ref="commonPanel" @updateGrh="getCommonResult"></common-panel>-->
+      <visualization ref="visualization"></visualization>
     </el-aside>
 
     <el-main>
@@ -17,11 +19,13 @@ import * as d3 from 'd3'
 import DetailPanel from "./DetailPanel";
 import SearchPanel from "./SearchPanel";
 import CommonPanel from "./CommonPanel";
+import Visualization from "./Visualization";
 export default {
   name: "Canvas",
-  components:{SearchPanel, DetailPanel,CommonPanel},
+  components:{Visualization, SearchPanel, DetailPanel,CommonPanel},
   data () {
     return {
+      mode:0,//0代表可视化界面，1代表知识图谱界面
       svgArea:null,
       links:[],
       nodes:[],
