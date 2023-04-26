@@ -29,11 +29,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582d28f8-82a8-4f27-93e0-1ac3000907b9" name="Default Changelist" comment="整合了之前的工作，能够用一个页面表示">
+    <list default="true" id="582d28f8-82a8-4f27-93e0-1ac3000907b9" name="Default Changelist" comment="修改了可视化首页的数据">
+      <change afterPath="$PROJECT_DIR$/PRTP_front/src/components/EngineeringStatistics.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRTP_front/src/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/assets/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRTP_front/src/assets/images/top_title.png" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/assets/images/top_title.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/Visualization.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/Visualization.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/headTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/headTop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/main.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRTP_front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682498350724</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改了可视化首页的数据">
+      <created>1682503564242</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682503564242</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +414,8 @@
     <MESSAGE value="完成Project Tenderee Winner节点展示基本功能以及Bid Win关系展示功能，删掉了不用的类" />
     <MESSAGE value="加入一个信息可视化界面，但是还没有导入数据，目前需要手动修改代码切换信息可视化界面和知识图谱可视化界面" />
     <MESSAGE value="整合了之前的工作，能够用一个页面表示" />
-    <option name="LAST_COMMIT_MESSAGE" value="整合了之前的工作，能够用一个页面表示" />
+    <MESSAGE value="修改了可视化首页的数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了可视化首页的数据" />
   </component>
   <component name="WindowStateProjectService">
     <state x="78" y="25" key="#Project_Structure" timestamp="1681466632577">

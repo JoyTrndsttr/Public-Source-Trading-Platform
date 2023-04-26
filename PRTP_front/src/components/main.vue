@@ -1,7 +1,7 @@
 <template>
   <div class="manage_page fillcontain">
     <el-row style="height: 100%;">
-      <el-col :span="4"  style="min-height: 100%; background-color: #324057;text-align: left">
+      <el-col :span="4"  style="min-height: 100vh; background-color: white;text-align: left">
         <el-menu :default-active="defaultActive" style="min-height: 100%;" theme="dark" router>
           <el-menu-item index="visualization"><i class="el-icon-menu"></i>数据可视化</el-menu-item>
           <el-submenu index="2">
@@ -12,6 +12,7 @@
           </el-submenu>
           <el-submenu index="3">
             <template slot="title"><i class="el-icon-plus"></i>交易分析</template>
+            <el-menu-item index="engineeringStatistics">工程建设统计</el-menu-item>
           </el-submenu>
           <el-submenu index="4">
             <template slot="title"><i class="el-icon-star-on"></i>主体分析</template>
@@ -29,7 +30,7 @@
 <!--        </el-breadcrumb>-->
         <head-top></head-top>
         <keep-alive>
-          <router-view></router-view>
+          <router-view ></router-view>
         </keep-alive>
       </el-col>
     </el-row>
@@ -53,6 +54,7 @@ export default {
 <style lang="less" scoped>
   @import '../assets/less/mixin';
   .manage_page{
-
+    min-height: 100vh;
+    //background: url(../assets/images/bg.jpg);
   }
 </style>
