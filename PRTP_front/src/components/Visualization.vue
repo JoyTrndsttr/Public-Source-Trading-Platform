@@ -1,59 +1,64 @@
 <template>
   <div class="main">
     <div class="top_title">
+
       <img src="../assets/images/top_title.png"/>
     </div>
     <div class="datas">
       <div class="data_left">
         <div class="left_top">
-          <div class="left_top_title">基础数据</div>
+          <div class="left_top_title">本月交易动态</div>
           <div class="left_top_main">
             <div class="left_main_circle">
-              <p class="counter-value circle_num1">1555</p>
-              <span class="span_font">确权总面积<br/>(万亩)</span>
+              <p class="counter-value circle_num1">479</p>
+              <span class="span_font">注册企业<br/>(个)</span>
             </div>
             <div class="left_main_circle">
-              <p class="counter-value circle_num2">2137.2</p>
-              <span class="span_font">流转总面积<br/>(万亩)</span>
+              <p class="counter-value circle_num2">185</p>
+              <span class="span_font">入场登记<br/>(家)</span>
             </div>
             <div class="left_main_circle">
-              <p class="counter-value circle_num3">2545.55</p>
-              <span class="span_font">挂网总面积<br/>(万亩)</span>
+              <p class="counter-value circle_num3">69</p>
+              <span class="span_font">交易场次<br/>(次)</span>
+            </div>
+            <div class="left_main_circle">
+              <p class="counter-value circle_num4">633</p>
+              <span class="span_font">发布公告<br/>(条)</span>
             </div>
           </div>
         </div>
         <div class="left_bottom">
-          <div class="left_top_title">业务类型</div>
+          <div class="left_top_title">本年度交易数据</div>
           <div id="Business_type" class="left_top_main left_bottom_main" style="width: 300px;height:200px"></div>
         </div>
       </div>
       <div class="data_middle">
         <div class="middle_top">
           <div class="middle_top_list">
-            <div class="list_title">累计发布数</div>
-            <div class="list_num list_num1"><span class="counter-value">901</span>条</div>
-            <div class="today_list_font">今日最新发布<span>12</span>条</div>
+            <div class="list_title">年度交易金额</div>
+            <div class="list_num list_num1"><span class="counter-value">714.63</span>亿元</div>
+            <div class="today_list_font">今日交易金额<span>2.65</span>亿元</div>
           </div>
           <div class="middle_top_list">
-            <div class="list_title">累计交易金额</div>
-            <div class="list_num list_num2"><span class="counter-value">1149.66</span>亿</div>
-            <div class="today_list_font">今日最新交易<span>0.2</span>亿</div>
+            <div class="list_title">年度交易宗数</div>
+            <div class="list_num list_num2"><span class="counter-value">746</span>宗</div>
+            <div class="today_list_font">今日交易场次<span>27</span>场</div>
           </div>
           <div class="middle_top_list">
-            <div class="list_title">累计交易面积</div>
-            <div class="list_num list_num3"><span class="counter-value">2137.26</span>万亩</div>
-            <div class="today_list_font">今日交易面积<span>1.5</span>万亩</div>
+            <div class="list_title">市场主体总数</div>
+            <div class="list_num list_num3"><span class="counter-value">28295</span>家</div>
+            <div class="today_list_font">市场主体活跃度指数<span>29.04</span></div>
           </div>
         </div>
         <div id="map" class="middle_bottom"></div>
       </div>
       <div class="data_right">
         <div class="right_top">
-          <div class="left_top_title">土地分析报表</div>
+          <div class="left_top_title">省外主体Top5</div>
           <div id="Land_analysis" class="left_top_main right_top_main" style="width: 300px;height:200px"></div>
         </div>
         <div class="right_bottom">
-          <div class="left_top_title">信息发布报表</div>
+          <div class="left_top_title">市场开放趋势</div>
           <div id="Information_Delivery" class="left_top_main right_top_main" style="width: 300px;height:200px"></div>
         </div>
       </div>
@@ -83,7 +88,7 @@ export default {
           legend: {
             x : 'center',
             y : 'bottom',
-            data: ['土地经营权','土地流转权','房屋所有权','集体建设用地','林权'],
+            data: ['工程建设','政府采购','土地','产权','其他'],
             textStyle: {
               color:'#4ADEFE',
             }
@@ -96,11 +101,12 @@ export default {
               center: ['45%', '35%'],
               avoidLabelOverlap: false,
               data:[
-                {value:335, name:'土地经营权'},
-                {value:310, name:'土地流转权'},
-                {value:234, name:'房屋所有权'},
-                {value:135, name:'集体建设用地'},
-                {value:1548, name:'林权'}
+                {value:168.92, name:'工程建设'},
+                {value:22.11, name:'政府采购'},
+                {value:36.14, name:'土地'},
+                {value:20.98, name:'其他'},
+                {value:487.47, name:'产权'}
+
               ],
               itemStyle: {
                 emphasis: {
@@ -130,16 +136,12 @@ export default {
           tooltip: {},
           dataset: {
             source: [
-              ['product', '本地总面积', '本地已流转面积'],
-              ['岳阳市', 43.3, 85.8],
-              ['益阳市', 83.1, 73.4],
-              ['长沙市', 86.4, 65.2],
-              ['株洲市', 72.4, 53.9],
-              ['衡阳市', 72.4, 53.9],
-              ['永州市', 72.4, 53.9],
-              ['娄底市', 72.4, 53.9],
-              ['郴州市', 72.4, 53.9],
-              ['湘潭市', 72.4, 53.9],
+              ['product', '市场主体数', '活跃指数'],
+              ['广东省', 2005, 52.22],
+              ['北京市', 1421, 37.01],
+              ['江苏省', 1020, 26.56],
+              ['浙江省', 766, 20.00],
+              ['湖南省', 651, 17.00],
             ]
           },
           xAxis: {
@@ -205,16 +207,79 @@ export default {
           tooltip: {},
           dataset: {
             source: [
-              ['product', '土地流转信息', '找地需求信息'],
-              ['岳阳市', 43.3, 85.8],
-              ['益阳市', 83.1, 73.4],
-              ['长沙市', 86.4, 65.2],
-              ['株洲市', 72.4, 53.9],
-              ['衡阳市', 72.4, 53.9],
-              ['永州市', 72.4, 53.9],
-              ['娄底市', 10.4, 200.9],
-              ['郴州市', 72.4, 90.9],
-              ['湘潭市', 20.4, 300.9],
+              ['product', '交易金额', '交易趋势'],
+              ['2019年', 826.49, 1711],
+              ['2020年', 922.18, 1777],
+              ['2021年', 1154.09, 1743],
+              ['2022年', 692.48, 1488],
+              ['2023年', 168.92, 309]
+            ]
+          },
+          xAxis: {
+            type: 'category',
+            axisLine: {
+              lineStyle: {
+                color: "#4ADEFE",
+              }
+            }
+          },
+          yAxis: {
+            axisLine: {
+              lineStyle: {
+                color: "#4ADEFE",
+              }
+            },
+            splitLine: {
+              show: true,
+              lineStyle:{
+                color: '#4ADEFE',
+              }
+            }
+          },
+          series: [
+            {
+              type: 'bar',
+              barMaxWidth: '10',
+              itemStyle: {
+                normal:{
+                  color: '#4ADEFE'
+                },
+              },
+            },
+            {
+              type: 'bar',
+              barMaxWidth: '10',
+              itemStyle: {
+                normal:{
+                  color: '#F3DB5C',
+                },
+              },
+            }
+          ]
+        },
+        {
+          legend: {
+            x : 'right',
+            y : 'top',
+            textStyle: {
+              color:'#4ADEFE',
+            }
+          },
+          grid:{
+            x: 30,
+            y: 50,
+            x2: 0,
+            y2: 45
+          },
+          tooltip: {},
+          dataset: {
+            source: [
+              ['product', '中标家数', '投标家数'],
+              ['2019年', 947, 1204],
+              ['2020年', 1208, 1049],
+              ['2021年', 1600, 1172],
+              ['2022年', 1270, 1115],
+              ['2023年', 350, 588]
             ]
           },
           xAxis: {
@@ -357,7 +422,7 @@ export default {
       var myChart2 = echarts.init(document.getElementById('Land_analysis'));
       myChart2.setOption(this.options[1]);
       var myChart3 = echarts.init(document.getElementById('Information_Delivery'));
-      myChart3.setOption(this.options[2]);
+      myChart3.setOption(this.options[3]);
       //自己写的
       var myChart4 = echarts.init(document.getElementById('map'));
       myChart4.setOption(this.options[2]);
