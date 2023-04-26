@@ -97,8 +97,8 @@
 <style scoped>
   .detail-panel{
     position: fixed;
-    left: 60px;
-    top: 360px;
+    right: 20px;
+    top: 160px;
     border-radius: 4px;
     width: 200px;
     cursor: pointer;

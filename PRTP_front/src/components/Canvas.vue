@@ -1,11 +1,12 @@
 <template>
+
   <el-container>
     <el-aside>
 <!--      目前需要手动控制显示的页面-->
-<!--      <search-panel ref="searchPanel" @updateGraph="getQuerySearchResult"></search-panel>-->
-<!--      <detail-panel ref="detailPanel" @update="getQueryResult"></detail-panel>-->
-<!--      <common-panel ref="commonPanel" @updateGrh="getCommonResult"></common-panel>-->
-      <visualization ref="visualization"></visualization>
+      <search-panel ref="searchPanel" @updateGraph="getQuerySearchResult"></search-panel>
+      <detail-panel ref="detailPanel" @update="getQueryResult"></detail-panel>
+      <common-panel ref="commonPanel" @updateGrh="getCommonResult"></common-panel>
+<!--      <visualization ref="visualization"></visualization>-->
     </el-aside>
 
     <el-main>
@@ -523,11 +524,12 @@ body{
 }
 
 .container{
-  width: 800px;
-  height: 500px;
+  position: fixed;
+  width: 600px;
+  height: 400px;
   border: 1px solid #2c3e50;
   border-radius:8px;
-  margin-top: 40px;
+  margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
   background: #154360 repeating-linear-gradient(30deg,

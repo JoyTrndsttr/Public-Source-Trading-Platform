@@ -78,8 +78,8 @@ export default {
 <style scoped>
 .common-panel{
   position: fixed;
-  left: 270px;
-  top: 60px;
+  left: 300px;
+  top: 330px;
   border-radius: 4px;
   width: 200px;
   cursor: pointer;

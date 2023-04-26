@@ -70,7 +70,7 @@ export default {
 <style scoped>
 .search-panel{
   position: fixed;
-  left: 60px;
+  left: 300px;
   top: 60px;
   border-radius: 4px;
   width: 200px;
