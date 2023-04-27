@@ -29,13 +29,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582d28f8-82a8-4f27-93e0-1ac3000907b9" name="Default Changelist" comment="修改了可视化首页的数据">
-      <change afterPath="$PROJECT_DIR$/PRTP_front/src/components/EngineeringStatistics.vue" afterDir="false" />
+    <list default="true" id="582d28f8-82a8-4f27-93e0-1ac3000907b9" name="Default Changelist" comment="加入工程建设统计页面并修改了一些样式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/Visualization.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/Visualization.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/headTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/headTop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRTP_front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/EngineeringStatistics.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/EngineeringStatistics.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682503564242</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="加入工程建设统计页面并修改了一些样式">
+      <created>1682507364105</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682507364106</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +418,8 @@
     <MESSAGE value="加入一个信息可视化界面，但是还没有导入数据，目前需要手动修改代码切换信息可视化界面和知识图谱可视化界面" />
     <MESSAGE value="整合了之前的工作，能够用一个页面表示" />
     <MESSAGE value="修改了可视化首页的数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了可视化首页的数据" />
+    <MESSAGE value="加入工程建设统计页面并修改了一些样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入工程建设统计页面并修改了一些样式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="78" y="25" key="#Project_Structure" timestamp="1681466632577">
@@ -443,28 +447,28 @@
       <screen x="0" y="25" width="1440" height="807" />
     </state>
     <state x="100" y="125" width="1240" height="607" key="DiffContextDialog/0.25.1440.807@0.25.1440.807" timestamp="1681022912470" />
-    <state width="1419" height="204" key="GridCell.Tab.0.bottom" timestamp="1682419005117">
-      <screen x="0" y="25" width="1440" height="809" />
+    <state width="1419" height="204" key="GridCell.Tab.0.bottom" timestamp="1682596794894">
+      <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="709" height="205" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1681024119117" />
+    <state width="1419" height="204" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1682596794894" />
     <state width="1419" height="204" key="GridCell.Tab.0.bottom/0.25.1440.809@0.25.1440.809" timestamp="1682419005117" />
     <state width="1419" height="204" key="GridCell.Tab.0.bottom/0.25.1440.813@0.25.1440.813" timestamp="1681466652407" />
-    <state width="1419" height="204" key="GridCell.Tab.0.center" timestamp="1682419005116">
-      <screen x="0" y="25" width="1440" height="809" />
+    <state width="1419" height="204" key="GridCell.Tab.0.center" timestamp="1682596794893">
+      <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="709" height="205" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1681024119116" />
+    <state width="1419" height="204" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1682596794893" />
     <state width="1419" height="204" key="GridCell.Tab.0.center/0.25.1440.809@0.25.1440.809" timestamp="1682419005116" />
     <state width="1419" height="204" key="GridCell.Tab.0.center/0.25.1440.813@0.25.1440.813" timestamp="1681466652406" />
-    <state width="1419" height="204" key="GridCell.Tab.0.left" timestamp="1682419005115">
-      <screen x="0" y="25" width="1440" height="809" />
+    <state width="1419" height="204" key="GridCell.Tab.0.left" timestamp="1682596794892">
+      <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="709" height="205" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1681024119116" />
+    <state width="1419" height="204" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1682596794892" />
     <state width="1419" height="204" key="GridCell.Tab.0.left/0.25.1440.809@0.25.1440.809" timestamp="1682419005115" />
     <state width="1419" height="204" key="GridCell.Tab.0.left/0.25.1440.813@0.25.1440.813" timestamp="1681466652406" />
-    <state width="1419" height="204" key="GridCell.Tab.0.right" timestamp="1682419005116">
-      <screen x="0" y="25" width="1440" height="809" />
+    <state width="1419" height="204" key="GridCell.Tab.0.right" timestamp="1682596794893">
+      <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="709" height="205" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1681024119117" />
+    <state width="1419" height="204" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1682596794893" />
     <state width="1419" height="204" key="GridCell.Tab.0.right/0.25.1440.809@0.25.1440.809" timestamp="1682419005116" />
     <state width="1419" height="204" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1681466652406" />
     <state width="1398" height="206" key="GridCell.Tab.1.bottom" timestamp="1681466644456">
@@ -495,10 +499,10 @@
       <screen x="0" y="25" width="1440" height="809" />
     </state>
     <state x="208" y="25" key="SettingsEditor/0.25.1440.809@0.25.1440.809" timestamp="1682409874955" />
-    <state x="320" y="166" key="Vcs.Push.Dialog.v2" timestamp="1682498355440">
-      <screen x="0" y="25" width="1440" height="809" />
+    <state x="320" y="166" key="Vcs.Push.Dialog.v2" timestamp="1682507368277">
+      <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.25.1440.807@0.25.1440.807" timestamp="1681023432627" />
+    <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.25.1440.807@0.25.1440.807" timestamp="1682507368277" />
     <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.25.1440.809@0.25.1440.809" timestamp="1682498355440" />
     <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1681465763273" />
     <state x="440" y="167" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1680935180203">
