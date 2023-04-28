@@ -6,6 +6,9 @@ import main from "../components/main"
 import SearchPanel from "../components/SearchPanel";
 import test from "../components/test";
 import EngineeringStatistics from "../components/EngineeringStatistics";
+import PurchaseStatistics from "../components/PurchaseStatistics";
+import NatureResourceStatistics from "../components/NatureResourceStatistics";
+import NationAssetsStatistics from "../components/NationAssetsStatistics";
 
 Vue.use(Router)
 
@@ -27,6 +30,24 @@ export default new Router({
           name:'engineeringStatistics',
           component: EngineeringStatistics,
           meta: ['交易分析','工程建设分析']
+        },
+        {
+          path: '/purchaseStatistics',
+          name: 'purchaseStatistics',
+          component: PurchaseStatistics,
+          meta: ['交易分析','采购项目统计']
+        },
+        {
+          path: '/natureResourceStatistics',
+          name: 'natureResourceStatistics',
+          component: NatureResourceStatistics,
+          meta: ['交易分析','自然资源交易统计']
+        },
+        {
+          path: '/nationAssetsStatistics',
+          name: 'nationAssetsStatistics',
+          component: NationAssetsStatistics,
+          meta: ['交易分析','国资交易统计']
         },
         {
           path:'/test',

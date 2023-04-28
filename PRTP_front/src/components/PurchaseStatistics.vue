@@ -6,7 +6,7 @@
         <div id="all" class="graph left_bottom_main"></div>
       </div>
       <div class="left_bottom">
-        <div class="left_top_title">类型分析</div>
+        <div class="left_top_title">采购类型分析</div>
         <div id="type1" class="graph left_bottom_main"></div>
       </div>
     </div>
@@ -16,7 +16,7 @@
         <div id="type2" class="graph right_top_main"></div>
       </div>
       <div class="right_bottom">
-        <div class="left_top_title">类别分析</div>
+        <div class="left_top_title">采购方式分析</div>
         <div id="area" class="graph right_top_main"></div>
       </div>
     </div>

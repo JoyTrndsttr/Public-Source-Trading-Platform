@@ -13,6 +13,9 @@
           <el-submenu index="3">
             <template slot="title"><i class="el-icon-plus"></i>交易分析</template>
             <el-menu-item index="engineeringStatistics">工程建设统计</el-menu-item>
+            <el-menu-item index="purchaseStatistics">采购项目统计</el-menu-item>
+            <el-menu-item index="natureResourceStatistics">自然资源交易统计</el-menu-item>
+            <el-menu-item index="nationAssetsStatistics">国资交易统计</el-menu-item>
           </el-submenu>
           <el-submenu index="4">
             <template slot="title"><i class="el-icon-star-on"></i>主体分析</template>
