@@ -29,13 +29,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582d28f8-82a8-4f27-93e0-1ac3000907b9" name="Default Changelist" comment="增加了一些图表并修改样式">
-      <change afterPath="$PROJECT_DIR$/PRTP_front/src/components/NationAssetsStatistics.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PRTP_front/src/components/NatureResourceStatistics.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PRTP_front/src/components/PurchaseStatistics.vue" afterDir="false" />
+    <list default="true" id="582d28f8-82a8-4f27-93e0-1ac3000907b9" name="Default Changelist" comment="添加三个echart图界面">
+      <change afterPath="$PROJECT_DIR$/PRTP_front/src/components/TradingHeatMap.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/EngineeringStatistics.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/EngineeringStatistics.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/main.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRTP_front/src/components/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/components/test.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PRTP_front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PRTP_front/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,18 +119,6 @@
     </force-push-targets>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/PRTP_front/src/assets/less" />
-      <recent name="$PROJECT_DIR$/PRTP_back" />
-      <recent name="$PROJECT_DIR$/PRTP_data" />
-      <recent name="$PROJECT_DIR$/PRTP_data/src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.csu.prtp.service" />
-      <recent name="org.csu.prtp.dao" />
-      <recent name="org.csu.prtp.controller" />
-      <recent name="org.csu.mooc.controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PRTP_front/src/components" />
       <recent name="$PROJECT_DIR$/PRTP_front/src/assets/css" />
@@ -140,19 +126,20 @@
       <recent name="$PROJECT_DIR$/PRTP_front/src/assets/images" />
       <recent name="$PROJECT_DIR$/PRTP_front/src/assets" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.csu.prtp.service" />
+      <recent name="org.csu.prtp.dao" />
+      <recent name="org.csu.prtp.controller" />
+      <recent name="org.csu.mooc.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PRTP_front/src/assets/less" />
+      <recent name="$PROJECT_DIR$/PRTP_back" />
+      <recent name="$PROJECT_DIR$/PRTP_data" />
+      <recent name="$PROJECT_DIR$/PRTP_data/src" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GramApplicationTests.testTendereeDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gram" />
       <extension name="coverage">
@@ -298,6 +285,8 @@
       <workItem from="1681453443296" duration="811000" />
       <workItem from="1682404309168" duration="8563000" />
       <workItem from="1682666887666" duration="62000" />
+      <workItem from="1682933430294" duration="1228000" />
+      <workItem from="1683007327479" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680935139622</created>
@@ -390,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682604019510</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="添加三个echart图界面">
+      <created>1682667016111</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682667016111</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,13 +440,14 @@
     <MESSAGE value="修改了可视化首页的数据" />
     <MESSAGE value="加入工程建设统计页面并修改了一些样式" />
     <MESSAGE value="增加了一些图表并修改样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了一些图表并修改样式" />
+    <MESSAGE value="添加三个echart图界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加三个echart图界面" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="78" y="25" key="#Project_Structure" timestamp="1682666949052">
+    <state x="78" y="25" key="#Project_Structure" timestamp="1683007347661">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state x="78" y="25" key="#Project_Structure/0.25.1440.807@0.25.1440.807" timestamp="1682666949052" />
+    <state x="78" y="25" key="#Project_Structure/0.25.1440.807@0.25.1440.807" timestamp="1683007347661" />
     <state x="78" y="25" key="#Project_Structure/0.25.1440.809@0.25.1440.809" timestamp="1681454400746" />
     <state x="78" y="25" key="#Project_Structure/0.25.1440.813@0.25.1440.813" timestamp="1681466632577" />
     <state x="133" y="25" width="1071" height="809" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1681193987769">
@@ -473,52 +470,52 @@
       <screen x="0" y="25" width="1440" height="807" />
     </state>
     <state x="100" y="125" width="1240" height="607" key="DiffContextDialog/0.25.1440.807@0.25.1440.807" timestamp="1681022912470" />
-    <state width="1398" height="206" key="GridCell.Tab.0.bottom" timestamp="1682666715668">
+    <state width="1398" height="205" key="GridCell.Tab.0.bottom" timestamp="1683007373518">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1682666715668" />
+    <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1683007373518" />
     <state width="1419" height="204" key="GridCell.Tab.0.bottom/0.25.1440.809@0.25.1440.809" timestamp="1682419005117" />
     <state width="1419" height="204" key="GridCell.Tab.0.bottom/0.25.1440.813@0.25.1440.813" timestamp="1681466652407" />
-    <state width="1398" height="206" key="GridCell.Tab.0.center" timestamp="1682666715668">
+    <state width="1398" height="205" key="GridCell.Tab.0.center" timestamp="1683007373517">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1682666715668" />
+    <state width="1398" height="205" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1683007373517" />
     <state width="1419" height="204" key="GridCell.Tab.0.center/0.25.1440.809@0.25.1440.809" timestamp="1682419005116" />
     <state width="1419" height="204" key="GridCell.Tab.0.center/0.25.1440.813@0.25.1440.813" timestamp="1681466652406" />
-    <state width="1398" height="206" key="GridCell.Tab.0.left" timestamp="1682666715667">
+    <state width="1398" height="205" key="GridCell.Tab.0.left" timestamp="1683007373515">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1682666715667" />
+    <state width="1398" height="205" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1683007373515" />
     <state width="1419" height="204" key="GridCell.Tab.0.left/0.25.1440.809@0.25.1440.809" timestamp="1682419005115" />
     <state width="1419" height="204" key="GridCell.Tab.0.left/0.25.1440.813@0.25.1440.813" timestamp="1681466652406" />
-    <state width="1398" height="206" key="GridCell.Tab.0.right" timestamp="1682666715668">
+    <state width="1398" height="205" key="GridCell.Tab.0.right" timestamp="1683007373517">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1682666715668" />
+    <state width="1398" height="205" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1683007373517" />
     <state width="1419" height="204" key="GridCell.Tab.0.right/0.25.1440.809@0.25.1440.809" timestamp="1682419005116" />
     <state width="1419" height="204" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1681466652406" />
-    <state width="1398" height="206" key="GridCell.Tab.1.bottom" timestamp="1682666715669">
+    <state width="1398" height="205" key="GridCell.Tab.1.bottom" timestamp="1683007373519">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.1.bottom/0.25.1440.807@0.25.1440.807" timestamp="1682666715669" />
+    <state width="1398" height="205" key="GridCell.Tab.1.bottom/0.25.1440.807@0.25.1440.807" timestamp="1683007373519" />
     <state width="1398" height="206" key="GridCell.Tab.1.bottom/0.25.1440.809@0.25.1440.809" timestamp="1681454433627" />
     <state width="1398" height="206" key="GridCell.Tab.1.bottom/0.25.1440.813@0.25.1440.813" timestamp="1681466644456" />
-    <state width="1398" height="206" key="GridCell.Tab.1.center" timestamp="1682666715668">
+    <state width="1398" height="205" key="GridCell.Tab.1.center" timestamp="1683007373518">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.1.center/0.25.1440.807@0.25.1440.807" timestamp="1682666715668" />
+    <state width="1398" height="205" key="GridCell.Tab.1.center/0.25.1440.807@0.25.1440.807" timestamp="1683007373518" />
     <state width="1398" height="206" key="GridCell.Tab.1.center/0.25.1440.809@0.25.1440.809" timestamp="1681454433627" />
     <state width="1398" height="206" key="GridCell.Tab.1.center/0.25.1440.813@0.25.1440.813" timestamp="1681466644454" />
-    <state width="1398" height="206" key="GridCell.Tab.1.left" timestamp="1682666715668">
+    <state width="1398" height="205" key="GridCell.Tab.1.left" timestamp="1683007373518">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.1.left/0.25.1440.807@0.25.1440.807" timestamp="1682666715668" />
+    <state width="1398" height="205" key="GridCell.Tab.1.left/0.25.1440.807@0.25.1440.807" timestamp="1683007373518" />
     <state width="1398" height="206" key="GridCell.Tab.1.left/0.25.1440.809@0.25.1440.809" timestamp="1681454433626" />
     <state width="1398" height="206" key="GridCell.Tab.1.left/0.25.1440.813@0.25.1440.813" timestamp="1681466644453" />
-    <state width="1398" height="206" key="GridCell.Tab.1.right" timestamp="1682666715669">
+    <state width="1398" height="205" key="GridCell.Tab.1.right" timestamp="1683007373519">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.1.right/0.25.1440.807@0.25.1440.807" timestamp="1682666715669" />
+    <state width="1398" height="205" key="GridCell.Tab.1.right/0.25.1440.807@0.25.1440.807" timestamp="1683007373519" />
     <state width="1398" height="206" key="GridCell.Tab.1.right/0.25.1440.809@0.25.1440.809" timestamp="1681454433627" />
     <state width="1398" height="206" key="GridCell.Tab.1.right/0.25.1440.813@0.25.1440.813" timestamp="1681466644455" />
     <state x="208" y="25" key="SettingsEditor" timestamp="1682409874955">

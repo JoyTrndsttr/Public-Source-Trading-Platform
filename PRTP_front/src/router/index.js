@@ -9,6 +9,7 @@ import EngineeringStatistics from "../components/EngineeringStatistics";
 import PurchaseStatistics from "../components/PurchaseStatistics";
 import NatureResourceStatistics from "../components/NatureResourceStatistics";
 import NationAssetsStatistics from "../components/NationAssetsStatistics";
+import TradingHeatMap from "../components/TradingHeatMap";
 
 Vue.use(Router)
 
@@ -24,6 +25,12 @@ export default new Router({
           name: 'canvas',
           component: Canvas,
           meta: ['主体分析','投标人分析']
+        },
+        {
+          path:'/tradingHeatmap',
+          name:'tradingHeatmap',
+          component: TradingHeatMap,
+          meta: ['交易分析','交易热力图']
         },
         {
           path:'/engineeringStatistics',

@@ -5,24 +5,25 @@
         <el-menu :default-active="defaultActive" style="min-height: 100%;" theme="dark" router>
           <el-menu-item index="visualization"><i class="el-icon-menu"></i>数据可视化</el-menu-item>
           <el-submenu index="2">
-            <template slot="title"><i class="el-icon-document"></i>数据源监控</template>
-            <el-menu-item index="test">数据上报情况监控</el-menu-item>
-            <el-menu-item index="shopList">交易数据采集情况监控</el-menu-item>
-            <el-menu-item index="foodList">视频信息监控</el-menu-item>
-          </el-submenu>
-          <el-submenu index="3">
             <template slot="title"><i class="el-icon-plus"></i>交易分析</template>
+            <el-menu-item index="tradingHeatmap">交易热力图</el-menu-item>
             <el-menu-item index="engineeringStatistics">工程建设统计</el-menu-item>
             <el-menu-item index="purchaseStatistics">采购项目统计</el-menu-item>
             <el-menu-item index="natureResourceStatistics">自然资源交易统计</el-menu-item>
             <el-menu-item index="nationAssetsStatistics">国资交易统计</el-menu-item>
           </el-submenu>
-          <el-submenu index="4">
+          <el-submenu index="3">
             <template slot="title"><i class="el-icon-star-on"></i>主体分析</template>
-            <el-menu-item index="canvas">投标人分析</el-menu-item>
+            <el-menu-item index="canvas">主体关系查找</el-menu-item>
             <el-menu-item index="winner">中标人分析</el-menu-item>
             <el-menu-item index="project">项目分析</el-menu-item>
             <!-- <el-menu-item index="newMember">用户数据</el-menu-item> -->
+          </el-submenu>
+          <el-submenu index="4">
+            <template slot="title"><i class="el-icon-document"></i>数据源监控</template>
+            <el-menu-item index="test">数据上报情况监控</el-menu-item>
+            <el-menu-item index="test">交易数据采集情况监控</el-menu-item>
+            <el-menu-item index="test">视频信息监控</el-menu-item>
           </el-submenu>
         </el-menu>
       </el-col>
