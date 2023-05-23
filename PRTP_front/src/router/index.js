@@ -24,7 +24,7 @@ export default new Router({
           path: '/canvas',
           name: 'canvas',
           component: Canvas,
-          meta: ['主体分析','投标人分析']
+          meta: ['主体分析','主体关系分析']
         },
         {
           path:'/tradingHeatmap',

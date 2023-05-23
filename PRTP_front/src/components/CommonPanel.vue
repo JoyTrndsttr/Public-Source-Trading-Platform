@@ -8,7 +8,7 @@
 
 
       <el-form ref="form"  label-width="0px">
-        <el-form-item>
+        <el-form-item v-show="false">
           <el-select v-model="currentType" placeholder="请选择查询关系" class="type-select">
             <el-option v-for="(type,i) in relationshipTypes" :label="type" :value="urls[i]" :key="type"></el-option>
           </el-select>
@@ -79,7 +79,7 @@ export default {
 .common-panel{
   position: fixed;
   left: 300px;
-  top: 330px;
+  top: 360px;
   border-radius: 4px;
   width: 200px;
   cursor: pointer;

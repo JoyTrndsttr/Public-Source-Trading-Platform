@@ -15,8 +15,8 @@
           <el-submenu index="3">
             <template slot="title"><i class="el-icon-star-on"></i>主体分析</template>
             <el-menu-item index="canvas">主体关系查找</el-menu-item>
-            <el-menu-item index="winner">中标人分析</el-menu-item>
-            <el-menu-item index="project">项目分析</el-menu-item>
+            <el-menu-item index="winner">主体分析</el-menu-item>
+<!--            <el-menu-item index="project"></el-menu-item>-->
             <!-- <el-menu-item index="newMember">用户数据</el-menu-item> -->
           </el-submenu>
           <el-submenu index="4">

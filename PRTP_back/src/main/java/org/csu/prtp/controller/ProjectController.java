@@ -4,6 +4,8 @@ import org.csu.prtp.common.EntityGroup;
 import org.csu.prtp.common.Relationship;
 import org.csu.prtp.pojo.*;
 import org.csu.prtp.service.ProjectService;
+import org.csu.prtp.service.TendereeService;
+import org.csu.prtp.service.WinnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +21,10 @@ import java.util.Set;
 public class ProjectController {
     @Autowired
     ProjectService projectService;
+    @Autowired
+    TendereeService tendereeService;
+    @Autowired
+    WinnerService winnerService;
 
     @GetMapping("/{projectName}")
     public CustomNode findByProjectName(@PathVariable("projectName") String projectName){
@@ -60,37 +66,54 @@ public class ProjectController {
     }
 
 //    http://localhost:8329/api/project/query/WIN/叶春泉/田祖国
+//    @GetMapping("/query/{relationship}/{name1}/{name2}")
+//    public List<CustomNode> getActedByTwoName(@PathVariable("relationship")  String rel,
+//                                              @PathVariable("name1") String name1,@PathVariable("name2") String name2){
+//        Project project1 = projectService.findByProjectName(name1);
+//        Project project2 = projectService.findByProjectName(name2);
+//        List<CustomNode> customNodes = new ArrayList<>();
+//        customNodes.add(new CustomNode(project1.getProjectName(),EntityGroup.PROJECT.getGroup(), project1));
+//        customNodes.add(new CustomNode(project2.getProjectName(),EntityGroup.PROJECT.getGroup(), project2));
+//
+//        if (rel.equals(Relationship.BID.getRelation()))
+//        {
+//            Set<Tenderee> tendereeSet1 = projectService.getTendereesByRelationship(project1,rel);
+//            Set<Tenderee> tendereeSet2 = projectService.getTendereesByRelationship(project2,rel);
+//            for(Tenderee tenderee : tendereeSet1){
+//                if(tendereeSet2.contains(tenderee))
+//                customNodes.add(new CustomNode(tenderee.getTendereeName(),EntityGroup.TENDEREE.getGroup(), tenderee));
+//
+//            }
+//        }else if(rel.equals(Relationship.WIN.getRelation())){
+//            Set<Winner> winnerSet1 = projectService.getWinnersByRelationship(project1,rel);
+//            Set<Winner> winnerSet2 = projectService.getWinnersByRelationship(project2,rel);
+//            for(Winner winner : winnerSet1){
+//                if(winnerSet2.contains(winner))
+//                    customNodes.add(new CustomNode(winner.getWinnerName(),EntityGroup.WINNER.getGroup(), winner));
+//
+//            }
+//
+//        }
+//        return customNodes;
+//        //http://localhost:8329/api/project/query/BID/叶春泉
+//        //http://localhost:8329/api/project/query/WIN/叶春泉
+//    }
+
     @GetMapping("/query/{relationship}/{name1}/{name2}")
     public List<CustomNode> getActedByTwoName(@PathVariable("relationship")  String rel,
                                               @PathVariable("name1") String name1,@PathVariable("name2") String name2){
-        Project project1 = projectService.findByProjectName(name1);
-        Project project2 = projectService.findByProjectName(name2);
+        Tenderee tenderee = tendereeService.findByTendereeName(name1);
+        Winner winner = winnerService.findByWinnerName(name2);
         List<CustomNode> customNodes = new ArrayList<>();
-        customNodes.add(new CustomNode(project1.getProjectName(),EntityGroup.PROJECT.getGroup(), project1));
-        customNodes.add(new CustomNode(project2.getProjectName(),EntityGroup.PROJECT.getGroup(), project2));
-
-        if (rel.equals(Relationship.BID.getRelation()))
-        {
-            Set<Tenderee> tendereeSet1 = projectService.getTendereesByRelationship(project1,rel);
-            Set<Tenderee> tendereeSet2 = projectService.getTendereesByRelationship(project2,rel);
-            for(Tenderee tenderee : tendereeSet1){
-                if(tendereeSet2.contains(tenderee))
-                customNodes.add(new CustomNode(tenderee.getTendereeName(),EntityGroup.TENDEREE.getGroup(), tenderee));
-
-            }
-        }else if(rel.equals(Relationship.WIN.getRelation())){
-            Set<Winner> winnerSet1 = projectService.getWinnersByRelationship(project1,rel);
-            Set<Winner> winnerSet2 = projectService.getWinnersByRelationship(project2,rel);
-            for(Winner winner : winnerSet1){
-                if(winnerSet2.contains(winner))
-                    customNodes.add(new CustomNode(winner.getWinnerName(),EntityGroup.WINNER.getGroup(), winner));
-
-            }
-
+        customNodes.add(new CustomNode(tenderee.getTendereeName(),EntityGroup.TENDEREE.getGroup(), tenderee));
+        customNodes.add(new CustomNode(winner.getWinnerName(),EntityGroup.WINNER.getGroup(), winner));
+        Set<Project> projectSet1 = tendereeService.getTenderedProjectByRelationship(tenderee,Relationship.BID.getRelation());
+        Set<Project> projectSet2 = winnerService.getWinnedProjectByRelationship(winner,Relationship.WIN.getRelation());
+        for(Project project : projectSet1) {
+            if (projectSet2.contains(project))
+                customNodes.add(new CustomNode(project.getProjectName(), EntityGroup.PROJECT.getGroup(), project));
         }
         return customNodes;
-        //http://localhost:8329/api/project/query/BID/叶春泉
-        //http://localhost:8329/api/project/query/WIN/叶春泉
     }
 
     @GetMapping({"/", "/all"})
